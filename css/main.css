@@ -1,25 +1,27 @@
-/* Base Styles */
+/*===========================
+  Base Styles
+========================== */
+/*Used to style the entire body element, including things that do not change, like font and font color*/
 body {
 
     font-family: sans-serif;
     color: #878787;
 }
 
+/*Used to make the image banner full screen width*/
 img {
     width: 100%;
 }
 
-ol {
+/* Used to style the list of board members in the about section */
+ol li{
     text-align: left;
 }
 
 
-
 /*===========================
-  Base Layout Styles
+  Layout Styles
 ========================== */
-
-/* - Layout Containers - */
 
 .container {
 	width: 100%;
@@ -27,8 +29,11 @@ ol {
     text-align: center;
 }
 
-/* - Main Styles - */
+/*===========================
+  Main Styles
+========================== */
 
+/* used em for font size so it can be scaled depending on screen size */
 .info {
     font-size: 1.1em;
 }
@@ -45,32 +50,34 @@ ol {
     
 }
 
+/*Used to put some space between sections*/
 #programs {
     padding-top: 20px;
 }
 
+/*Styling donate and contactUs sections*/
 #donate {
     background-color: #f4e5d9;
     font-size: .9em;
-    padding: 15px;
-    margin: 20px;
 }
 
 #contactUs {
     background-color: #f4e5d9;
     font-size: .9em;
-    padding: 15px;
-    margin: 20px;
 }
 
+/*Styling footer*/
 .main-footer {
     display: block;
+/* Display set to block so it will span the entire bottom */
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
+/* making the footer full width */
 }
 
+/* Used to style social media icon for facebook*/
 .fa-facebook {
     background: #3B5998;
     color: white;
@@ -82,7 +89,26 @@ ol {
     border-radius: 50%;
 }
 
+/*===========================
+  Pseudo Classes
+========================== */
+/*Change color on hover state of facebook image, makes it slightly opaque */
 .fa-facebook:hover {
     opacity: 0.7;
 }
 
+/*===========================
+  Media Queries
+========================== */
+/* Used to style page for screens over 992px */
+@media (min-width: 992px) {       
+    #modalButton {
+        float: left;
+        margin-left: 10%;
+    }
+
+    #faceLogo {
+        float: right;
+        margin: 0 10% 2% 0;
+    }
+}
